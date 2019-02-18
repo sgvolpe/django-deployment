@@ -37,13 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'debug_toolbar',
+    
     'accounts',
     'bootstrap3',
     
     'new_dash',
-    'django_plotly_dash.apps.DjangoPlotlyDashConfig',
-    'dash',
+   # 'django_plotly_dash.apps.DjangoPlotlyDashConfig',
+    #'dash',
     #'app_tags.py',
 
 
