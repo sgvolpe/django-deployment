@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     
     'new_dash',
    # 'django_plotly_dash.apps.DjangoPlotlyDashConfig',
-    'dash',
+    #'dash',
     #'app_tags.py',
 
 
