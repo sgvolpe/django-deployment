@@ -1,6 +1,6 @@
 ###
 # Imports
-import os, re, itertools, urllib, io, urllib,datetime,zlib, base64, re, datetime
+import datetime, functools, itertools, urllib, io, urllib,datetime,zlib, base64, os, re, time
 import lxml.etree as ET
 
 import matplotlib.pyplot as plt
@@ -9,17 +9,15 @@ import pandas as pd
 import random
 import seaborn as sns
 from sklearn import preprocessing
-
 from collections import OrderedDict
-
 from matplotlib.ticker import FuncFormatter
 
 
 
 DEBUG = False
 
-import functools
-import time
+import
+
 
 def timer(func):
     """Print the runtime of the decorated function"""
