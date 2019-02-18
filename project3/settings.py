@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'bootstrap3',
     
     'new_dash',
-    'django_plotly_dash.apps.DjangoPlotlyDashConfig',
+   # 'django_plotly_dash.apps.DjangoPlotlyDashConfig',
     'dash',
     #'app_tags.py',
 
