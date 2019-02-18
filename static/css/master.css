@@ -1,0 +1,56 @@
+
+body {
+    background: #edf0f2;
+    //dark#3d3e3e
+}
+
+.navbar{
+  background-color:white;
+  //font-size: 1.4em ;
+  //border-width: 1px;
+  //border-style:solid;
+  //border-color:grey;
+  font-family: 'Mukta Mahee', sans-serif;
+
+// #d5d5d5
+//#8f99a1
+//#6e7a93
+
+//#96848d
+
+
+}
+
+.container{
+background-color: white;
+color: black;
+
+}
+
+
+
+
+//.navbar-light .navbar-nav .nav-link{color:white}
+//.navbar-light .navbar-nav .nav-link.dropdown-toggle{color:white}
+//.navbar-light .navbar-nav .nav-link{color:white}
+//.nav-item active{ color:white}
+//.nav-link{color:white}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #dddddd;
+   color: white;
+   text-align: center;
+
+
+}
+
+.col-sm-offset-1{
+    margin-top: 1em;
+}
+
+
+body {color:#00aa76}

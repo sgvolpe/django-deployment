@@ -1,0 +1,21 @@
+
+{% extends 'base.html' %}
+{% load bootstrap3 %}
+
+{% block content %}
+  <div class="container">
+    <h1>Several Same BFM List</h1>
+    <div class="col-md-8">
+      <a href="{% url 'new_dash:several_same_BFM_new' %}">Create New</a>
+    <div/>
+    <div class="col-md-8">
+    	<ul>
+        {% for several_same_bfm in several_same_bfm_list %}
+        <li class="group li-with-bullet">
+					<a href="{% url 'new_dash:several_same_BFMDetail' pk=several_same_bfm.pk %}">{{several_same_bfm.id}} - {{bfm.title}} {{several_same_BFM.id}}</a>
+				</li>
+    	{% endfor %}
+      </ul>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,56 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% load staticfiles %}
+{% load app_tags %}
+{% load plotly_dash %}
+
+{% block content %}
+
+      <div class="container justify-center ">
+        <h1>BFM JSON Parser !</h1>
+        <div class="cl" >
+          {% plotly_app name="getitin"  ratio=1 %}
+        </div>
+
+
+      </div>
+      {% if bfm_rs %}
+        <div class="container justify-center ">
+          <h2>Itineraries: {{ bfm_rs.OTA_AirLowFareSearchRS.PricedItinCount}}</h2>
+          <h2>BrandedOneWayItinCount: {{ bfm_rs.OTA_AirLowFareSearchRS.BrandedOneWayItinCount}}</h2>
+          <h2>SimpleOneWayItinCount: {{ bfm_rs.OTA_AirLowFareSearchRS.SimpleOneWayItinCount}} </h2>
+          <h2>
+            {% if bfm_rs.OTA_AirLowFareSearchRS.OneWayItineraries %}
+              {{ bfm_rs.OTA_AirLowFareSearchRS.PricedItineraries.PricedItinerary|length }} One Ways
+            {% endif %}
+          </h2>
+          {% if bfm_rs.OTA_AirLowFareSearchRS.OneWayItineraries %}
+          {% endif %}
+        </div>
+        {% for option in bfm_rs.OTA_AirLowFareSearchRS.PricedItineraries.PricedItinerary%}
+        <div class="container">
+          {% include "tags/itinerary.html" with option=option greeting="Hello" %}
+          </div>
+        {% endfor %}
+      {% else %}
+      <div class="jumbotron">
+        Error
+      </div>
+      {% endif %}
+      <script type="text/javascript">
+          price_list = []
+          {% for option in bfm_rs.OTA_AirLowFareSearchRS.PricedItineraries.PricedItinerary%}
+            {% for fare in option.AirItineraryPricingInfo %}
+              price_list.push({{fare.ItinTotalFare.TotalFare.Amount}})
+            {% endfor %}
+            {% for add_fare in option.TPA_Extensions.AdditionalFares %}
+              {% for fare in add_fare.AirItineraryPricingInfo %}
+                price_list.push({{fare.ItinTotalFare.TotalFare.Amount}})
+              {% endfor %}
+            {% endfor %}
+          {% endfor %}
+          console.log(price_list)
+      </script>
+
+{% endblock %}

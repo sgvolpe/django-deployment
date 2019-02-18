@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load staticfiles %}
+{% block content %}
+  <style media="screen">
+    body {
+      background-top: 10px;
+      background-image: url("https://picsum.photos/2000/780/?random");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color:ghostwhite;
+    }
+  </style>
+  <div class="justify-content-center col-sm-offset-1">
+    <div class="row offset-sm-1 justify-content-center">
+      <div class="alert alert-success" role="alert">
+        Welcome {{user.username}}
+      </div>
+    </div>
+    <div class="row offset-sm-1 justify-content-center">
+      <div class="col-xs">
+        <div class="card col-sm-10" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Where you left.</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs">
+        <div class="card col-sm-10" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Air Shopping</h5>
+            <h6 class="card-subtitle mb-2 text-muted">BFM Sent</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="/dashboard/bfm_list" class="card-link">See List</a>
+            <a href="/dashboard/bfm_new" class="card-link">Run New</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs">
+        <div class="card col-sm-10" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Where to start.</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs">
+        <div class="card col-sm-10" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Where to start.</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs">
+        <div class="card col-sm-10" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Where to start.</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+
+  </script>
+{% endblock %}
+
+<div class="container">
+  <div id="icecream">
+
+  </div>
+
+</div>

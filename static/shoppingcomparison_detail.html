@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load bootstrap3 %}
+{% load static %}
+{% load staticfiles %}
+{% load plotly_dash %}
+
+
+<link rel="stylesheet" href="{% static 'css/master.css' %}">
+{% block content %}
+  <div class="container">
+    <div class="col-xs-12">
+      <h2>Shopping Analysis - {{shoppingcomparison.title}}</h2>
+      <div class="col-xs-8">
+        <h4>{{shoppingcomparison.description}}</h4>
+      </div>
+    </div>
+    <h4>../{{shoppingcomparison.csv_file.url}}</h4>
+    <h6><a href="../../../{{shoppingcomparison.csv_file.url}}" download>Download File</a></h6>
+
+  {% if shoppingcomparison.analysis_finished %}
+       <div class="jumbotron">
+         <h3>Analysis Finished!</h3>
+         <p>{{ shoppingcomparison.analysis_finished }}</p>
+         <div class="">
+           <a class="btn btn-outline-dark" href="{% url 'dashboard:summary_view' pk=shoppingcomparison.summary_dashboard.pk %}">See Dashboard</a>
+           <a class="btn btn-outline-dark" href="{% url 'dashboard:run_analysis' pk=shoppingcomparison.pk %}">Run Analysis Again</a>
+         </div>
+
+       </div>
+  {% else %}
+    <p>Still running</p>
+    <a class="btn btn-outline-dark" href="{% url 'dashboard:run_analysis' pk=shoppingcomparison.pk %}">Run Analysis</a>
+
+  {% endif %}
+
+  </div>
+{% endblock %}

@@ -1,0 +1,83 @@
+{% load app_tags %}
+
+<div class="row border rounded overflow-hidden flex-mb-row mb-4 shadow-sm h-md-250" style="font-size:0.8em">
+  <div class="col-sm-12" style="background:#6e7a93; color:white">
+    <strong class="d-inline-block mb-2">{{option.SequenceNumber}} - {{option.AirItinerary.DirectionInd}}
+        {% for leg in option.AirItinerary.OriginDestinationOptions.OriginDestinationOption %}
+         <span> {{leg.ElapsedTime}}</span>
+        {% endfor %}
+      </strong>
+  </div>
+  <div class="col-sm-5 itinerary">
+    <div class="col-sm-12" id="flight_collapse_{{option.SequenceNumber}}" >
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Flight Number</th>
+            <th>From</th>
+            <th>To</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for leg in option.AirItinerary.OriginDestinationOptions.OriginDestinationOption %}
+            {% for flight in leg.FlightSegment %}
+                <tr>
+                  <td><h6>{{flight.MarketingAirline.Code}} {{flight.FlightNumber}}</h6></td>
+                  <td><h6>{{flight.DepartureAirport.LocationCode}}</h6> {{flight.DepartureDateTime|parse_date}}</td> <!--div class="">(Term: {{flight.DepartureAirport.TerminalID}})<div-->
+                  <td><h6>{{flight.ArrivalAirport.LocationCode}}</h6> {{flight.ArrivalDateTime|parse_date}}</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+            {% endfor %}
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col-sm-7 pricingInfo">
+    {% for fare in option.AirItineraryPricingInfo %} <!--Main Fare-->
+      <div  class="row">
+        <div class="col-sm-4"><strong>Total Fare: {{fare.ItinTotalFare.TotalFare.CurrencyCode}}{{fare.ItinTotalFare.TotalFare.Amount}}</strong></div>
+        <div class="col-sm-4">Base Fare: {{fare.ItinTotalFare.BaseFare.CurrencyCode}}{{fare.ItinTotalFare.BaseFare.Amount}}</div>
+        <div class="col-sm-1">
+           <a data-toggle="collapse" href="#fare_collapse_{{option.SequenceNumber}}" role="button" aria-expanded="false" aria-controls="collapseExample">+Info</a>
+        </div>
+      </div>
+    {% endfor %}
+    {% for add_fare in option.TPA_Extensions.AdditionalFares %} <!--Add Fare-->
+      <div  class="row">
+        <div class="col-sm-4"><strong>Total Fare: {{add_fare.AirItineraryPricingInfo.ItinTotalFare.TotalFare.CurrencyCode}}{{add_fare.AirItineraryPricingInfo.ItinTotalFare.TotalFare.Amount}}</strong></div>
+        <div class="col-sm-4">Base Fare: {{add_fare.AirItineraryPricingInfo.ItinTotalFare.BaseFare.CurrencyCode}}{{add_fare.AirItineraryPricingInfo.ItinTotalFare.BaseFare.Amount}}</div>
+      </div>
+    {% endfor %}
+    <!-- Fare Details -->
+    <div class="row collapse" id="fare_collapse_{{option.SequenceNumber}}" >
+      <div class="col-sm-12">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>***</th>
+              <th>PTC</th>
+              <th>RBD</th>
+              <th>Av Break</th>
+              <th>Fare Basis Code</th>
+              <th>Bags</th>
+              <th>Base Fare</th>
+              <th>Total Fare</th>
+              <th>Last Ticketing Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for fare in option.AirItineraryPricingInfo %}
+                {% include "tags/fare.html" with FARE=fare fares_list=fare.PTC_FareBreakdowns.PTC_FareBreakdown fare_id="Main Fare" option_id=option.SequenceNumber %}
+            {% endfor %}
+            {% for add_fare in option.TPA_Extensions.AdditionalFares %}
+                {% include "tags/fare.html" with FARE=add_fare.AirItineraryPricingInfo fares_list=add_fare.AirItineraryPricingInfo.PTC_FareBreakdowns.PTC_FareBreakdown fare_id="Add Fare" option_id=option.SequenceNumber%}
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>

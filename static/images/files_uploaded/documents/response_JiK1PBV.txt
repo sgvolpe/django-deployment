@@ -1,0 +1,460 @@
+<OTA_AirLowFareSearchRS xmlns="http://www.opentravel.org/OTA/2003/05" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="3.3.0" PricedItinCount="3" BrandedOneWayItinCount="0" SimpleOneWayItinCount="0" DepartedItinCount="0" SoldOutItinCount="0" AvailableItinCount="0">
+  <Success/>
+  <Warnings>
+    <Warning Type="MAIN" Code="DEPRECATEDRS" ShortText="This response version is deprecated and will be decommissioned once a newer version is released."/>
+    <Warning Type="WORKERTHREAD" Code="TRANSACTIONID" MessageClass="I" ShortText="4931892908724323267"/>
+    <Warning Type="SERVER" Code="PICHLP261" MessageClass="I" ShortText="27033"/>
+    <Warning Type="DRE" Code="RULEID" MessageClass="I" ShortText="15930"/>
+    <Warning Type="DEFAULT" Code="RULEID" MessageClass="I" ShortText="24435"/>
+  </Warnings>
+  <PricedItineraries>
+    <PricedItinerary SequenceNumber="1">
+      <AirItinerary DirectionInd="Return">
+        <OriginDestinationOptions>
+          <OriginDestinationOption ElapsedTime="55">
+            <FlightSegment DepartureDateTime="2018-10-05T10:55:00" ArrivalDateTime="2018-10-05T11:50:00" StopQuantity="0" FlightNumber="2385" ResBookDesigCode="M" ElapsedTime="55">
+              <DepartureAirport LocationCode="MVD"/>
+              <ArrivalAirport LocationCode="AEP"/>
+              <OperatingAirline Code="AU" FlightNumber="2385" CompanyShortName="AU"/>
+              <Equipment AirEquipType="E90"/>
+              <MarketingAirline Code="AR"/>
+              <DisclosureAirline Code="AU"/>
+              <MarriageGrp>O</MarriageGrp>
+              <DepartureTimeZone GMTOffset="-3"/>
+              <ArrivalTimeZone GMTOffset="-3"/>
+              <TPA_Extensions>
+                <eTicket Ind="true"/>
+                <Mileage Amount="137"/>
+              </TPA_Extensions>
+            </FlightSegment>
+          </OriginDestinationOption>
+          <OriginDestinationOption ElapsedTime="45">
+            <FlightSegment DepartureDateTime="2018-10-05T16:00:00" ArrivalDateTime="2018-10-05T16:45:00" StopQuantity="0" FlightNumber="2382" ResBookDesigCode="M" ElapsedTime="45">
+              <DepartureAirport LocationCode="AEP"/>
+              <ArrivalAirport LocationCode="MVD"/>
+              <OperatingAirline Code="AU" FlightNumber="2382" CompanyShortName="AU"/>
+              <Equipment AirEquipType="E90"/>
+              <MarketingAirline Code="AR"/>
+              <DisclosureAirline Code="AU"/>
+              <MarriageGrp>O</MarriageGrp>
+              <DepartureTimeZone GMTOffset="-3"/>
+              <ArrivalTimeZone GMTOffset="-3"/>
+              <TPA_Extensions>
+                <eTicket Ind="true"/>
+                <Mileage Amount="137"/>
+              </TPA_Extensions>
+            </FlightSegment>
+          </OriginDestinationOption>
+        </OriginDestinationOptions>
+      </AirItinerary>
+      <AirItineraryPricingInfo PricingSource="ADVJR1" PricingSubSource="MIP" FareReturned="true">
+        <ItinTotalFare>
+          <BaseFare Amount="357.00" CurrencyCode="USD" DecimalPlaces="2"/>
+          <FareConstruction Amount="357.00" CurrencyCode="NUC" DecimalPlaces="2"/>
+          <EquivFare Amount="357.00" CurrencyCode="USD" DecimalPlaces="2"/>
+          <Taxes>
+            <Tax TaxCode="TOTALTAX" Amount="89.14" CurrencyCode="USD" DecimalPlaces="2"/>
+          </Taxes>
+          <TotalFare Amount="446.14" CurrencyCode="USD" DecimalPlaces="2"/>
+        </ItinTotalFare>
+        <PTC_FareBreakdowns>
+          <PTC_FareBreakdown>
+            <PassengerTypeQuantity Code="ADT" Quantity="1"/>
+            <FareBasisCodes>
+              <FareBasisCode BookingCode="M" AvailabilityBreak="true" DepartureAirportCode="MVD" ArrivalAirportCode="AEP" FareComponentBeginAirport="MVD" FareComponentEndAirport="AEP" FareComponentDirectionality="FROM" FareComponentVendorCode="ATP" GovCarrier="AR">MP12MUY</FareBasisCode>
+              <FareBasisCode BookingCode="M" AvailabilityBreak="true" DepartureAirportCode="AEP" ArrivalAirportCode="MVD" FareComponentBeginAirport="AEP" FareComponentEndAirport="MVD" FareComponentDirectionality="TO" FareComponentVendorCode="ATP" GovCarrier="AR">MP12MUY</FareBasisCode>
+            </FareBasisCodes>
+            <PassengerFare>
+              <BaseFare Amount="357.00" CurrencyCode="USD"/>
+              <FareConstruction Amount="357.00" CurrencyCode="NUC" DecimalPlaces="2"/>
+              <EquivFare Amount="357.00" CurrencyCode="USD" DecimalPlaces="2"/>
+              <Taxes>
+                <Tax TaxCode="QO" Amount="6.00" CurrencyCode="USD" DecimalPlaces="2" CountryCode="AR"/>
+                <Tax TaxCode="TQ2" Amount="4.42" CurrencyCode="USD" DecimalPlaces="2" CountryCode="AR"/>
+                <Tax TaxCode="XR2" Amount="25.16" CurrencyCode="USD" DecimalPlaces="2" CountryCode="AR"/>
+                <Tax TaxCode="UR" Amount="5.76" CurrencyCode="USD" DecimalPlaces="2" CountryCode="UY"/>
+                <Tax TaxCode="UY" Amount="26.80" CurrencyCode="USD" DecimalPlaces="2" CountryCode="UY"/>
+                <Tax TaxCode="WU" Amount="21.00" CurrencyCode="USD" DecimalPlaces="2" CountryCode="UY"/>
+                <TaxSummary TaxCode="UY" Amount="26.80" CurrencyCode="USD" DecimalPlaces="2" CountryCode="UY"/>
+                <TaxSummary TaxCode="WU" Amount="21.00" CurrencyCode="USD" DecimalPlaces="2" CountryCode="UY"/>
+                <TaxSummary TaxCode="UR" Amount="5.76" CurrencyCode="USD" DecimalPlaces="2" CountryCode="UY"/>
+                <TaxSummary TaxCode="XR2" Amount="25.16" CurrencyCode="USD" DecimalPlaces="2" CountryCode="AR"/>
+                <TaxSummary TaxCode="TQ2" Amount="4.42" CurrencyCode="USD" DecimalPlaces="2" CountryCode="AR"/>
+                <TaxSummary TaxCode="QO" Amount="6.00" CurrencyCode="USD" DecimalPlaces="2" CountryCode="AR"/>
+                <TotalTax Amount="89.14" CurrencyCode="USD" DecimalPlaces="2"/>
+              </Taxes>
+              <TotalFare Amount="446.14" CurrencyCode="USD"/>
+              <TPA_Extensions>
+                <Surcharges Ind="Q" Type="MISCELLANEOUS/OTHER">15.00</Surcharges>
+                <Surcharges Ind="Q" Type="MISCELLANEOUS/OTHER">15.00</Surcharges>
+                <Messages>
+                  <Message AirlineCode="AR" Type="N" FailCode="0" Info="NONEND/VALID AR ONLY"/>
+                  <Message Type="W" FailCode="0" Info="VALIDATING CARRIER - AR"/>
+                </Messages>
+                <BaggageInformationList>
+                  <BaggageInformation ProvisionType="A" AirlineCode="AR">
+                    <Segment Id="0"/>
+                    <Allowance Pieces="1"/>
+                  </BaggageInformation>
+                  <BaggageInformation ProvisionType="A" AirlineCode="AR">
+                    <Segment Id="1"/>
+                    <Allowance Pieces="1"/>
+                  </BaggageInformation>
+                </BaggageInformationList>
+              </TPA_Extensions>
+            </PassengerFare>
+            <Endorsements NonRefundableIndicator="false"/>
+            <TPA_Extensions>
+              <FareCalcLine Info="MVD AR BUE Q15.00 163.50AR MVD Q15.00 163.50NUC357.00END ROE1.00"/>
+            </TPA_Extensions>
+            <FareInfos>
+              <FareInfo>
+                <FareReference>M</FareReference>
+                <TPA_Extensions>
+                  <SeatsRemaining Number="9" BelowMin="false"/>
+                  <Cabin Cabin="Y"/>
+                  <Meal Code="N"/>
+                </TPA_Extensions>
+              </FareInfo>
+              <FareInfo>
+                <FareReference>M</FareReference>
+                <TPA_Extensions>
+                  <SeatsRemaining Number="9" BelowMin="false"/>
+                  <Cabin Cabin="Y"/>
+                  <Meal Code="N"/>
+                </TPA_Extensions>
+              </FareInfo>
+            </FareInfos>
+          </PTC_FareBreakdown>
+        </PTC_FareBreakdowns>
+        <FareInfos>
+          <FareInfo>
+            <FareReference>M</FareReference>
+            <TPA_Extensions>
+              <SeatsRemaining Number="9" BelowMin="false"/>
+              <Cabin Cabin="Y"/>
+              <Meal Code="N"/>
+            </TPA_Extensions>
+          </FareInfo>
+          <FareInfo>
+            <FareReference>M</FareReference>
+            <TPA_Extensions>
+              <SeatsRemaining Number="9" BelowMin="false"/>
+              <Cabin Cabin="Y"/>
+              <Meal Code="N"/>
+            </TPA_Extensions>
+          </FareInfo>
+        </FareInfos>
+        <TPA_Extensions>
+          <DivideInParty Indicator="false"/>
+          <ValidatingCarrier SettlementMethod="ARC" NewVcxProcess="true">
+            <Default Code="AR"/>
+          </ValidatingCarrier>
+        </TPA_Extensions>
+      </AirItineraryPricingInfo>
+      <TicketingInfo TicketType="eTicket" ValidInterline="Yes"/>
+      <TPA_Extensions>
+        <ValidatingCarrier Code="AR"/>
+        <DiversitySwapper WeighedPriceAmount="133.842"/>
+      </TPA_Extensions>
+    </PricedItinerary>
+    <PricedItinerary SequenceNumber="2">
+      <AirItinerary DirectionInd="Return">
+        <OriginDestinationOptions>
+          <OriginDestinationOption ElapsedTime="55">
+            <FlightSegment DepartureDateTime="2018-10-05T10:55:00" ArrivalDateTime="2018-10-05T11:50:00" StopQuantity="0" FlightNumber="2385" ResBookDesigCode="M" ElapsedTime="55">
+              <DepartureAirport LocationCode="MVD"/>
+              <ArrivalAirport LocationCode="AEP"/>
+              <OperatingAirline Code="AU" FlightNumber="2385" CompanyShortName="AU"/>
+              <Equipment AirEquipType="E90"/>
+              <MarketingAirline Code="AR"/>
+              <DisclosureAirline Code="AU"/>
+              <MarriageGrp>O</MarriageGrp>
+              <DepartureTimeZone GMTOffset="-3"/>
+              <ArrivalTimeZone GMTOffset="-3"/>
+              <TPA_Extensions>
+                <eTicket Ind="true"/>
+                <Mileage Amount="137"/>
+              </TPA_Extensions>
+            </FlightSegment>
+          </OriginDestinationOption>
+          <OriginDestinationOption ElapsedTime="45">
+            <FlightSegment DepartureDateTime="2018-10-05T19:10:00" ArrivalDateTime="2018-10-05T19:55:00" StopQuantity="0" FlightNumber="2396" ResBookDesigCode="M" ElapsedTime="45">
+              <DepartureAirport LocationCode="AEP"/>
+              <ArrivalAirport LocationCode="MVD"/>
+              <OperatingAirline Code="AU" FlightNumber="2396" CompanyShortName="AU"/>
+              <Equipment AirEquipType="E90"/>
+              <MarketingAirline Code="AR"/>
+              <DisclosureAirline Code="AU"/>
+              <MarriageGrp>O</MarriageGrp>
+              <DepartureTimeZone GMTOffset="-3"/>
+              <ArrivalTimeZone GMTOffset="-3"/>
+              <TPA_Extensions>
+                <eTicket Ind="true"/>
+                <Mileage Amount="137"/>
+              </TPA_Extensions>
+            </FlightSegment>
+          </OriginDestinationOption>
+        </OriginDestinationOptions>
+      </AirItinerary>
+      <AirItineraryPricingInfo PricingSource="ADVJR1" PricingSubSource="MIP" FareReturned="true">
+        <ItinTotalFare>
+          <BaseFare Amount="357.00" CurrencyCode="USD" DecimalPlaces="2"/>
+          <FareConstruction Amount="357.00" CurrencyCode="NUC" DecimalPlaces="2"/>
+          <EquivFare Amount="357.00" CurrencyCode="USD" DecimalPlaces="2"/>
+          <Taxes>
+            <Tax TaxCode="TOTALTAX" Amount="89.14" CurrencyCode="USD" DecimalPlaces="2"/>
+          </Taxes>
+          <TotalFare Amount="446.14" CurrencyCode="USD" DecimalPlaces="2"/>
+        </ItinTotalFare>
+        <PTC_FareBreakdowns>
+          <PTC_FareBreakdown>
+            <PassengerTypeQuantity Code="ADT" Quantity="1"/>
+            <FareBasisCodes>
+              <FareBasisCode BookingCode="M" AvailabilityBreak="true" DepartureAirportCode="MVD" ArrivalAirportCode="AEP" FareComponentBeginAirport="MVD" FareComponentEndAirport="AEP" FareComponentDirectionality="FROM" FareComponentVendorCode="ATP" GovCarrier="AR">MP12MUY</FareBasisCode>
+              <FareBasisCode BookingCode="M" AvailabilityBreak="true" DepartureAirportCode="AEP" ArrivalAirportCode="MVD" FareComponentBeginAirport="AEP" FareComponentEndAirport="MVD" FareComponentDirectionality="TO" FareComponentVendorCode="ATP" GovCarrier="AR">MP12MUY</FareBasisCode>
+            </FareBasisCodes>
+            <PassengerFare>
+              <BaseFare Amount="357.00" CurrencyCode="USD"/>
+              <FareConstruction Amount="357.00" CurrencyCode="NUC" DecimalPlaces="2"/>
+              <EquivFare Amount="357.00" CurrencyCode="USD" DecimalPlaces="2"/>
+              <Taxes>
+                <Tax TaxCode="QO" Amount="6.00" CurrencyCode="USD" DecimalPlaces="2" CountryCode="AR"/>
+                <Tax TaxCode="TQ2" Amount="4.42" CurrencyCode="USD" DecimalPlaces="2" CountryCode="AR"/>
+                <Tax TaxCode="XR2" Amount="25.16" CurrencyCode="USD" DecimalPlaces="2" CountryCode="AR"/>
+                <Tax TaxCode="UR" Amount="5.76" CurrencyCode="USD" DecimalPlaces="2" CountryCode="UY"/>
+                <Tax TaxCode="UY" Amount="26.80" CurrencyCode="USD" DecimalPlaces="2" CountryCode="UY"/>
+                <Tax TaxCode="WU" Amount="21.00" CurrencyCode="USD" DecimalPlaces="2" CountryCode="UY"/>
+                <TaxSummary TaxCode="UY" Amount="26.80" CurrencyCode="USD" DecimalPlaces="2" CountryCode="UY"/>
+                <TaxSummary TaxCode="WU" Amount="21.00" CurrencyCode="USD" DecimalPlaces="2" CountryCode="UY"/>
+                <TaxSummary TaxCode="UR" Amount="5.76" CurrencyCode="USD" DecimalPlaces="2" CountryCode="UY"/>
+                <TaxSummary TaxCode="XR2" Amount="25.16" CurrencyCode="USD" DecimalPlaces="2" CountryCode="AR"/>
+                <TaxSummary TaxCode="TQ2" Amount="4.42" CurrencyCode="USD" DecimalPlaces="2" CountryCode="AR"/>
+                <TaxSummary TaxCode="QO" Amount="6.00" CurrencyCode="USD" DecimalPlaces="2" CountryCode="AR"/>
+                <TotalTax Amount="89.14" CurrencyCode="USD" DecimalPlaces="2"/>
+              </Taxes>
+              <TotalFare Amount="446.14" CurrencyCode="USD"/>
+              <TPA_Extensions>
+                <Surcharges Ind="Q" Type="MISCELLANEOUS/OTHER">15.00</Surcharges>
+                <Surcharges Ind="Q" Type="MISCELLANEOUS/OTHER">15.00</Surcharges>
+                <Messages>
+                  <Message AirlineCode="AR" Type="N" FailCode="0" Info="NONEND/VALID AR ONLY"/>
+                  <Message Type="W" FailCode="0" Info="VALIDATING CARRIER - AR"/>
+                </Messages>
+                <BaggageInformationList>
+                  <BaggageInformation ProvisionType="A" AirlineCode="AR">
+                    <Segment Id="0"/>
+                    <Allowance Pieces="1"/>
+                  </BaggageInformation>
+                  <BaggageInformation ProvisionType="A" AirlineCode="AR">
+                    <Segment Id="1"/>
+                    <Allowance Pieces="1"/>
+                  </BaggageInformation>
+                </BaggageInformationList>
+              </TPA_Extensions>
+            </PassengerFare>
+            <Endorsements NonRefundableIndicator="false"/>
+            <TPA_Extensions>
+              <FareCalcLine Info="MVD AR BUE Q15.00 163.50AR MVD Q15.00 163.50NUC357.00END ROE1.00"/>
+            </TPA_Extensions>
+            <FareInfos>
+              <FareInfo>
+                <FareReference>M</FareReference>
+                <TPA_Extensions>
+                  <SeatsRemaining Number="9" BelowMin="false"/>
+                  <Cabin Cabin="Y"/>
+                  <Meal Code="N"/>
+                </TPA_Extensions>
+              </FareInfo>
+              <FareInfo>
+                <FareReference>M</FareReference>
+                <TPA_Extensions>
+                  <SeatsRemaining Number="9" BelowMin="false"/>
+                  <Cabin Cabin="Y"/>
+                  <Meal Code="N"/>
+                </TPA_Extensions>
+              </FareInfo>
+            </FareInfos>
+          </PTC_FareBreakdown>
+        </PTC_FareBreakdowns>
+        <FareInfos>
+          <FareInfo>
+            <FareReference>M</FareReference>
+            <TPA_Extensions>
+              <SeatsRemaining Number="9" BelowMin="false"/>
+              <Cabin Cabin="Y"/>
+              <Meal Code="N"/>
+            </TPA_Extensions>
+          </FareInfo>
+          <FareInfo>
+            <FareReference>M</FareReference>
+            <TPA_Extensions>
+              <SeatsRemaining Number="9" BelowMin="false"/>
+              <Cabin Cabin="Y"/>
+              <Meal Code="N"/>
+            </TPA_Extensions>
+          </FareInfo>
+        </FareInfos>
+        <TPA_Extensions>
+          <DivideInParty Indicator="false"/>
+          <ValidatingCarrier SettlementMethod="ARC" NewVcxProcess="true">
+            <Default Code="AR"/>
+          </ValidatingCarrier>
+        </TPA_Extensions>
+      </AirItineraryPricingInfo>
+      <TicketingInfo TicketType="eTicket" ValidInterline="Yes"/>
+      <TPA_Extensions>
+        <ValidatingCarrier Code="AR"/>
+        <DiversitySwapper WeighedPriceAmount="200.763"/>
+      </TPA_Extensions>
+    </PricedItinerary>
+    <PricedItinerary SequenceNumber="3">
+      <AirItinerary DirectionInd="Return">
+        <OriginDestinationOptions>
+          <OriginDestinationOption ElapsedTime="55">
+            <FlightSegment DepartureDateTime="2018-10-05T14:15:00" ArrivalDateTime="2018-10-05T15:10:00" StopQuantity="0" FlightNumber="2395" ResBookDesigCode="Y" ElapsedTime="55">
+              <DepartureAirport LocationCode="MVD"/>
+              <ArrivalAirport LocationCode="AEP"/>
+              <OperatingAirline Code="AU" FlightNumber="2395" CompanyShortName="AU"/>
+              <Equipment AirEquipType="E90"/>
+              <MarketingAirline Code="AR"/>
+              <DisclosureAirline Code="AU"/>
+              <MarriageGrp>O</MarriageGrp>
+              <DepartureTimeZone GMTOffset="-3"/>
+              <ArrivalTimeZone GMTOffset="-3"/>
+              <TPA_Extensions>
+                <eTicket Ind="true"/>
+                <Mileage Amount="137"/>
+              </TPA_Extensions>
+            </FlightSegment>
+          </OriginDestinationOption>
+          <OriginDestinationOption ElapsedTime="45">
+            <FlightSegment DepartureDateTime="2018-10-05T19:10:00" ArrivalDateTime="2018-10-05T19:55:00" StopQuantity="0" FlightNumber="2396" ResBookDesigCode="K" ElapsedTime="45">
+              <DepartureAirport LocationCode="AEP"/>
+              <ArrivalAirport LocationCode="MVD"/>
+              <OperatingAirline Code="AU" FlightNumber="2396" CompanyShortName="AU"/>
+              <Equipment AirEquipType="E90"/>
+              <MarketingAirline Code="AR"/>
+              <DisclosureAirline Code="AU"/>
+              <MarriageGrp>O</MarriageGrp>
+              <DepartureTimeZone GMTOffset="-3"/>
+              <ArrivalTimeZone GMTOffset="-3"/>
+              <TPA_Extensions>
+                <eTicket Ind="true"/>
+                <Mileage Amount="137"/>
+              </TPA_Extensions>
+            </FlightSegment>
+          </OriginDestinationOption>
+        </OriginDestinationOptions>
+      </AirItinerary>
+      <AirItineraryPricingInfo PricingSource="ADVJR1" PricingSubSource="MIP" FareReturned="true" LastTicketDate="2018-10-05">
+        <ItinTotalFare>
+          <BaseFare Amount="394.00" CurrencyCode="USD" DecimalPlaces="2"/>
+          <FareConstruction Amount="393.50" CurrencyCode="NUC" DecimalPlaces="2"/>
+          <EquivFare Amount="394.00" CurrencyCode="USD" DecimalPlaces="2"/>
+          <Taxes>
+            <Tax TaxCode="TOTALTAX" Amount="91.94" CurrencyCode="USD" DecimalPlaces="2"/>
+          </Taxes>
+          <TotalFare Amount="485.94" CurrencyCode="USD" DecimalPlaces="2"/>
+        </ItinTotalFare>
+        <PTC_FareBreakdowns>
+          <PTC_FareBreakdown>
+            <PassengerTypeQuantity Code="ADT" Quantity="1"/>
+            <FareBasisCodes>
+              <FareBasisCode BookingCode="Y" AvailabilityBreak="true" DepartureAirportCode="MVD" ArrivalAirportCode="AEP" FareComponentBeginAirport="MVD" FareComponentEndAirport="AEP" FareComponentDirectionality="FROM" FareComponentVendorCode="ATP" GovCarrier="AR">YOWUY</FareBasisCode>
+              <FareBasisCode BookingCode="K" AvailabilityBreak="true" DepartureAirportCode="AEP" ArrivalAirportCode="MVD" FareComponentBeginAirport="AEP" FareComponentEndAirport="MVD" FareComponentDirectionality="TO" FareComponentVendorCode="ATP" GovCarrier="AR">KPX12UY</FareBasisCode>
+            </FareBasisCodes>
+            <PassengerFare>
+              <BaseFare Amount="394.00" CurrencyCode="USD"/>
+              <FareConstruction Amount="393.50" CurrencyCode="NUC" DecimalPlaces="2"/>
+              <EquivFare Amount="394.00" CurrencyCode="USD" DecimalPlaces="2"/>
+              <Taxes>
+                <Tax TaxCode="QO" Amount="6.00" CurrencyCode="USD" DecimalPlaces="2" CountryCode="AR"/>
+                <Tax TaxCode="TQ2" Amount="4.42" CurrencyCode="USD" DecimalPlaces="2" CountryCode="AR"/>
+                <Tax TaxCode="XR2" Amount="25.16" CurrencyCode="USD" DecimalPlaces="2" CountryCode="AR"/>
+                <Tax TaxCode="UR" Amount="5.76" CurrencyCode="USD" DecimalPlaces="2" CountryCode="UY"/>
+                <Tax TaxCode="UY" Amount="29.60" CurrencyCode="USD" DecimalPlaces="2" CountryCode="UY"/>
+                <Tax TaxCode="WU" Amount="21.00" CurrencyCode="USD" DecimalPlaces="2" CountryCode="UY"/>
+                <TaxSummary TaxCode="UY" Amount="29.60" CurrencyCode="USD" DecimalPlaces="2" CountryCode="UY"/>
+                <TaxSummary TaxCode="WU" Amount="21.00" CurrencyCode="USD" DecimalPlaces="2" CountryCode="UY"/>
+                <TaxSummary TaxCode="UR" Amount="5.76" CurrencyCode="USD" DecimalPlaces="2" CountryCode="UY"/>
+                <TaxSummary TaxCode="XR2" Amount="25.16" CurrencyCode="USD" DecimalPlaces="2" CountryCode="AR"/>
+                <TaxSummary TaxCode="TQ2" Amount="4.42" CurrencyCode="USD" DecimalPlaces="2" CountryCode="AR"/>
+                <TaxSummary TaxCode="QO" Amount="6.00" CurrencyCode="USD" DecimalPlaces="2" CountryCode="AR"/>
+                <TotalTax Amount="91.94" CurrencyCode="USD" DecimalPlaces="2"/>
+              </Taxes>
+              <TotalFare Amount="485.94" CurrencyCode="USD"/>
+              <TPA_Extensions>
+                <Surcharges Ind="Q" Type="MISCELLANEOUS/OTHER">15.00</Surcharges>
+                <Surcharges Ind="Q" Type="MISCELLANEOUS/OTHER">15.00</Surcharges>
+                <Messages>
+                  <Message AirlineCode="AR" Type="N" FailCode="0" Info="NONEND/VALID AR ONLY"/>
+                  <Message Type="W" FailCode="0" Info="VALIDATING CARRIER - AR"/>
+                </Messages>
+                <BaggageInformationList>
+                  <BaggageInformation ProvisionType="A" AirlineCode="AR">
+                    <Segment Id="0"/>
+                    <Allowance Pieces="1"/>
+                  </BaggageInformation>
+                  <BaggageInformation ProvisionType="A" AirlineCode="AR">
+                    <Segment Id="1"/>
+                    <Allowance Pieces="1"/>
+                  </BaggageInformation>
+                </BaggageInformationList>
+              </TPA_Extensions>
+            </PassengerFare>
+            <Endorsements NonRefundableIndicator="true"/>
+            <TPA_Extensions>
+              <FareCalcLine Info="MVD AR BUE Q15.00 235.00AR MVD Q15.00 128.50NUC393.50END ROE1.00"/>
+            </TPA_Extensions>
+            <FareInfos>
+              <FareInfo>
+                <FareReference>Y</FareReference>
+                <TPA_Extensions>
+                  <SeatsRemaining Number="9" BelowMin="false"/>
+                  <Cabin Cabin="Y"/>
+                </TPA_Extensions>
+              </FareInfo>
+              <FareInfo>
+                <FareReference>K</FareReference>
+                <TPA_Extensions>
+                  <SeatsRemaining Number="9" BelowMin="false"/>
+                  <Cabin Cabin="Y"/>
+                  <Meal Code="N"/>
+                </TPA_Extensions>
+              </FareInfo>
+            </FareInfos>
+          </PTC_FareBreakdown>
+        </PTC_FareBreakdowns>
+        <FareInfos>
+          <FareInfo>
+            <FareReference>Y</FareReference>
+            <TPA_Extensions>
+              <SeatsRemaining Number="9" BelowMin="false"/>
+              <Cabin Cabin="Y"/>
+            </TPA_Extensions>
+          </FareInfo>
+          <FareInfo>
+            <FareReference>K</FareReference>
+            <TPA_Extensions>
+              <SeatsRemaining Number="9" BelowMin="false"/>
+              <Cabin Cabin="Y"/>
+              <Meal Code="N"/>
+            </TPA_Extensions>
+          </FareInfo>
+        </FareInfos>
+        <TPA_Extensions>
+          <DivideInParty Indicator="false"/>
+          <ValidatingCarrier SettlementMethod="ARC" NewVcxProcess="true">
+            <Default Code="AR"/>
+          </ValidatingCarrier>
+        </TPA_Extensions>
+      </AirItineraryPricingInfo>
+      <TicketingInfo TicketType="eTicket" ValidInterline="Yes"/>
+      <TPA_Extensions>
+        <ValidatingCarrier Code="AR"/>
+        <DiversitySwapper WeighedPriceAmount="291.564"/>
+      </TPA_Extensions>
+    </PricedItinerary>
+  </PricedItineraries>
+</OTA_AirLowFareSearchRS>
